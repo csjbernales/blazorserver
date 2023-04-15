@@ -23,6 +23,7 @@ namespace blazorserver.Pages
         public void OnGet()
         {
             RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier;
+            _logger.IsEnabled(LogLevel.Information);
         }
     }
 }
