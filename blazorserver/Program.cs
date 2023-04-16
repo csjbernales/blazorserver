@@ -11,6 +11,8 @@ builder.Services.AddSingleton<WeatherForecastService>();
 
 builder.Services.AddDbContext<DataContext>(options => options.UseInMemoryDatabase("videogames"));
 
+builder.Services.AddScoped<IGameService, GameService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

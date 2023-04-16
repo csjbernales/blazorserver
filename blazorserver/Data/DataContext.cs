@@ -28,6 +28,6 @@ namespace blazorserver.Data
                 });
 
         }
-        public static DbSet<Game> Games() => Set<Game>();
+        public DbSet<Game> Games => Set<Game>();
     }
 }
